@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Home/X</title>
+    <style>
+        * {
+            font-family: "TwitterChirp, -apple-system, BlinkMacSystemFont, " Segoe UI", Roboto, Helvetica, Arial, sans-serif";
+        }
+
+        @media (max-width: 768px) {
+            .first {
+                width: 64px;
+            }
+
+            .second {
+                width: 80%;
+                font-size: 11px;
+            }
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 0;
+        }
+
+        .third >div{
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white">
+    <div class="flex md:container m-auto my-4">
+        <div class="first w-[30%]">
+            <div class="sidebar flex items-end flex-col ">
+                <div class="logo invert my-4 px-5 w-full justify-self-center md:px-16">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                        class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                        <g>
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <ul class="flex flex-col text-2xl -space-y-1 w-full md:px-11 text-[20px] text-[#e7e9ea]">
+                    <li
+                        class="flex md:justify-start  mr-4 items-center gap-3 md:w-fit px-5 py-3 hover:bg-gray-900 hover:rounded-full hover:cursor-pointer">
+                        <span class="text-3xl material-symbols-outlined">home</span><span
+                            class="hidden md:block">Home</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start  mr-4 items-center gap-3 md:w-fit px-5 py-3 hover:bg-gray-900 hover:rounded-full hover:cursor-pointer">
+                        <span class="text-3xl material-symbols-outlined">search</span><span
+                            class="hidden md:block">Explore</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start  mr-4 items-center gap-3 md:w-fit px-5 py-3 hover:bg-gray-900 hover:rounded-full hover:cursor-pointer">
+                        <span class="text-3xl material-symbols-outlined">notifications</span><span
+                            class="hidden md:block">Notifications</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start  mr-4 items-center gap-3 md:w-fit px-5 py-3 hover:bg-gray-900 hover:rounded-full hover:cursor-pointer">
+                        <span class="text-3xl material-symbols-outlined">mail</span><span
+                            class="hidden md:block">Messages</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start  mr-4 items-center gap-3 md:w-fit px-5 py-3 hover:bg-gray-900 hover:rounded-full hover:cursor-pointer">
+                        <span class="text-3xl material-symbols-outlined"><svg viewBox="0 0 24 24" aria-hidden="true"
+                                class="invert w-6 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e ">
+                                <g>
+                                    <g clip-path="url(#32-clip0_2592_269)" clip-rule="evenodd">
+                                        <path
+                                            d="M18 4.1H6c-1.05 0-1.9.85-1.9 1.9v12c0 1.05.85 1.9 1.9 1.9h12c1.05 0 1.9-.85 1.9-1.9V6c0-1.05-.85-1.9-1.9-1.9zM6 2h12c2.21 0 4 1.79 4 4v12c0 2.21-1.79 4-4 4H6c-2.21 0-4-1.79-4-4V6c0-2.21 1.79-4 4-4z">
+                                        </path>
+                                        <path d="M6.68 17.8l8.108-11.58h2.532L9.21 17.8H6.68z"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="32-clip0_2592_269">
+                                            <rect height="20" rx="1" width="20" x="2" y="2"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </g>
+                            </svg></span><span class="hidden md:block">Grok</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start  mr-4 items-center gap-3 md:w-fit px-5 py-3 hover:bg-gray-900 hover:rounded-full hover:cursor-pointer">
+                        <span class="text-3xl material-symbols-outlined">group</span><span
+                            class="hidden md:block">Communities</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start  mr-4 items-center gap-3 md:w-fit px-5 py-3 hover:bg-gray-900 hover:rounded-full hover:cursor-pointer">
+                        <span class="text-xl material-symbols-outlined invert"><svg viewBox="0 0 24 24"
+                                aria-hidden="true"
+                                class="w-5 m-auto r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                                <g>
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                    </path>
+                                </g>
+                            </svg></span><span class="hidden md:block">Premium</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start  mr-4 items-center gap-3 md:w-fit px-5 py-3 hover:bg-gray-900 hover:rounded-full hover:cursor-pointer">
+                        <span class="text-3xl material-symbols-outlined">flash_on</span><span
+                            class="hidden md:block">Verified Orgs</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start  mr-4 items-center gap-3 md:w-fit px-5 py-3 hover:bg-gray-900 hover:rounded-full hover:cursor-pointer">
+                        <span class="text-3xl material-symbols-outlined">person</span><span
+                            class="hidden md:block">Profile</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start  mr-4 items-center gap-3 md:w-fit px-5 py-3 hover:bg-gray-900 hover:rounded-full hover:cursor-pointer">
+                        <span class="text-3xl material-symbols-outlined"><svg viewBox="0 0 24 24" aria-hidden="true"
+                                class="invert w-6 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                                <g>
+                                    <path
+                                        d="M3.75 12c0-4.56 3.69-8.25 8.25-8.25s8.25 3.69 8.25 8.25-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12zM12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-4.75 11.5c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25S6 11.31 6 12s.56 1.25 1.25 1.25zm9.5 0c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25zM13.25 12c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25z">
+                                    </path>
+                                </g>
+                            </svg></span><span class="hidden md:block">More</span>
+                    </li>
+                    <li>
+                        <div class="hidden md:block button text-center w-full">
+                            <button class="bg-[#1D9BF0] px-28 text-xl rounded-full py-3 font-medium m-5">Post</button>
+                        </div>
+                        <div class="md:hidden button text-center w-full">
+                            <button class="bg-[#1D9BF0] px-2 py-1 rounded-full my-4">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hidden md:block">
+                            <div
+                                class="item  px-4 p-1 hover:bg-gray-900 hover:cursor-pointer relative flex gap-5 rounded-full w-full">
+                                <img src="default_profile_bigger.png" alt="" width="50px" class="rounded-full inline">
+                                <div class="hidden md:block font-bold text-base">
+                                    John Doe
+                                    <div class="text-base text-gray-500">@johndoe</div>
+                                </div>
+                                <div class="hidden md:block flex justify-end w-full items-center ">
+                                    <span class="material-symbols-outlined">
+                                        more_horiz
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="second border-[1px] border-x-gray-700 border-y-black">
+            <div class="top flex sticky top-0 bg-black" style="opacity: 0.8; backdrop-filter: blur(64px);"> 
+                <div
+                    class="left w-1/2 flex justify-center font-bold text-base md:text-lg cursor-pointer hover:bg-gray-900 py-3">
+                    For you
+                    <div class="absolute w-16 rounded-full h-1 bg-blue-500 bottom-0 md:left-[19%]"></div>
+                </div>
+                <div
+                    class="right w-1/2 flex justify-center font-bold text-base md:text-lg cursor-pointer hover:bg-gray-900 py-3">
+                    Following</div>
+                <div class="settings mx-2 py-3 cursor-pointer"><span class="material-symbols-outlined">
+                        settings
+                    </span></div>
+            </div>
+            <div class="h-[1px] w-full bg-gray-700"></div>
+            <div class="whatsHappening flex gap-3">
+                <div class="img m-5">
+                    <img src="default_profile_bigger.png" width="50px" class="rounded-full cursor-pointer" alt="">
+                </div>
+                <div class="w-full">
+                    <input type="text" placeholder="What is happening?!"
+                        class="bg-black text-lg md:text-xl placeholder:text-gray-500 w-full h-7 my-6 outline-none">
+                    <div class="text-[#1B8FDE] flex items-center gap-2 text-sm font-medium w-full cursor-pointer">
+                        <span class="material-symbols-outlined">
+                            public
+                        </span>
+                        <span class="text=[14px]">Everyone can reply</span>
+                    </div>
+                    <div class="h-[0.2px] w-[95%] my-3 bg-gray-700"></div>
+                    <div class="flex items-center">
+                        <div class="text-[#1B8FDE] flex gap-3 w-[75%] my-4">
+                            <span class="material-symbols-outlined cursor-pointer">
+                                imagesmode
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer">
+                                gif_box
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer">
+                                ballot
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer">
+                                mood
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer">
+                                calendar_clock
+                            </span>
+                            <span class="material-symbols-outlined text-[#0F4E78]">
+                                location_on
+                            </span>
+                        </div>
+                        <div class="postbtn justify-self-center">
+                            <button
+                                class="text-white bg-[#1D9BF0] px-4 text-sm rounded-full py-2 font-medium ">Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[1px] w-full bg-gray-700"></div>
+            <div class="posts">
+                <div class="post flex my-3 justify-center items-start">
+                    <div class="image mx-4">
+                        <img src="https://pbs.twimg.com/profile_images/1648759833175412737/eoJqXu6W_bigger.jpg"
+                            width="80px" class="rounded-[3px] " alt="">
+                    </div>
+                    <div class="account">
+                        <div class="flex">
+                            <span class="font-bold hover:underline">NASA Solar System</span>
+                            <svg class="inline mx-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="12" fill="#1D9BF0" />
+                                <path d="M10 14.5l4.5-4.5l1.5 1.5L10 17L7.5 14.5l1.5-1.5L10 14.5z" fill="#fff" />
+                            </svg>
+                            <div class="image">
+                                <img src="account prop.jpg" width="20" alt="">
+                            </div>
+                            <span class="text-[#6c7074]">@NASASolarSystem · 12m</span>
+                        </div>
+                        <div class="content">
+                            <span>Tonight's partial lunar eclipse. See other September sky events: </span>
+                            <a href="https://science.nasa.gov/skywatching/whats-up/"
+                                class="text-[#1D9BF0] hover:underline">science.nasa.gov/skywatching/wh...</a>
+                            <div class="postimg flex justify-center my-4">
+                                <img src="https://pbs.twimg.com/media/GXujRLXakAA-9PP?format=jpg&name=small" alt=""
+                                    width="40%" class="border-l-[0.5px] 
+                                border-t-[0.5px] border-b-[0.5px] border-gray-700 rounded-l-[10px]">
+                                <img src="https://pbs.twimg.com/media/GXujSIzakAEyaxg?format=jpg&name=small" alt=""
+                                    width="40%"
+                                    class="border-r-[0.5px] border-t-[0.5px] border-b-[0.5px] border-gray-700 rounded-r-[10px]">
+                            </div>
+                        </div>
+                        <div class="icons flex justify-around w-full">
+                            <div class="flex group">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-blue-500">
+                                    <g>
+                                        <path
+                                            d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span class="text-[13px] text-[#70757A] group-hover:text-blue-500">32</span>
+
+                            </div>
+                            <div class="flex group">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-[#00BA7C]">
+                                    <g>
+                                        <path
+                                            d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span class="text-[13px] text-[#70757A] group-hover:text-[#00BA7C]">343</span>
+
+                            </div>
+
+                            <div class="flex group">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-[#D7156F]">
+                                    <g>
+                                        <path
+                                            d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span class="text-[13px] text-[#70757A] group-hover:text-[#D7156F]">1.6K</span>
+
+                            </div>
+                            <div class="flex group">
+
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-blue-500">
+                                    <g>
+                                        <path
+                                            d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span class="text-[13px] text-[#70757A] group-hover:text-blue-500">64K</span>
+                            </div>
+                            <div class="flex group gap-2">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-blue-500">
+                                    <g>
+                                        <path
+                                            d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-blue-500">
+                                    <g>
+                                        <path
+                                            d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="h-[1px] w-full bg-gray-700"></div>
+                <div class="post flex my-3 justify-center items-start">
+                    <div class="image mx-4">
+                        <img src="https://pbs.twimg.com/profile_images/1493351002208043008/JeWVCY2-_bigger.jpg"
+                            width="50px" class="rounded-[100%] " alt="">
+                    </div>
+                    <div class="account">
+                        <div class="flex">
+                            <span class="font-bold hover:underline">John Kraus</span>
+                            <svg class="inline mx-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="12" fill="#1D9BF0" />
+                                <path d="M10 14.5l4.5-4.5l1.5 1.5L10 17L7.5 14.5l1.5-1.5L10 14.5z" fill="#fff" />
+                            </svg>
+                            <!-- <div class="image">
+                                <img src="account prop.jpg" width="20" alt="">
+                            </div> -->
+                            <span class="text-[#6c7074]">@johnkrausphotos · 30m</span>
+                        </div>
+                        <div class="content">
+                            <span>A bright future awaits</span>
+                            <!-- <a href="https://science.nasa.gov/skywatching/whats-up/"
+                                class="text-[#1D9BF0] hover:underline">science.nasa.gov/skywatching/wh...</a> -->
+                            <div class="postimg flex justify-start my-4">
+                                <img src="GYIBRuKXoAAwoiB.jpeg" alt=""
+                                    width="80%" class="border-[0.5px] border-gray-700 rounded-[10px]">
+                                <!-- <img src="https://pbs.twimg.com/media/GXujSIzakAEyaxg?format=jpg&name=small" alt=""
+                                    width="40%"
+                                    class="border-r-[0.5px] border-t-[0.5px] border-b-[0.5px] border-gray-700 rounded-r-[10px]"> -->
+                            </div>
+                        </div>
+                        <div class="icons flex justify-around">
+                            <div class="flex group">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-blue-500">
+                                    <g>
+                                        <path
+                                            d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span class="text-[13px] text-[#70757A] group-hover:text-blue-500">32</span>
+
+                            </div>
+                            <div class="flex group">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-[#00BA7C]">
+                                    <g>
+                                        <path
+                                            d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span class="text-[13px] text-[#70757A] group-hover:text-[#00BA7C]">343</span>
+
+                            </div>
+
+                            <div class="flex group">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-[#D7156F]">
+                                    <g>
+                                        <path
+                                            d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span class="text-[13px] text-[#70757A] group-hover:text-[#D7156F]">1.6K</span>
+
+                            </div>
+                            <div class="flex group">
+
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-blue-500">
+                                    <g>
+                                        <path
+                                            d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span class="text-[13px] text-[#70757A] group-hover:text-blue-500">64K</span>
+                            </div>
+                            <div class="flex group gap-2">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-blue-500">
+                                    <g>
+                                        <path
+                                            d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-blue-500">
+                                    <g>
+                                        <path
+                                            d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="h-[1px] w-full bg-gray-700"></div>
+                <div class="post flex my-3 justify-center items-start">
+                    <div class="image mx-4">
+                        <img src="https://pbs.twimg.com/profile_images/1557421659925237763/RzJu2YI3_bigger.jpg"
+                            width="150px" class="rounded-full " alt="">
+                    </div>
+                    <div class="account">
+                        <div class="flex">
+                            <span class="font-bold hover:underline">SkalskiP</span>
+                            <svg class="inline mx-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="12" fill="#1D9BF0" />
+                                <path d="M10 14.5l4.5-4.5l1.5 1.5L10 17L7.5 14.5l1.5-1.5L10 14.5z" fill="#fff" />
+                            </svg>
+                            <div class="image">
+                                <img src="account prop.jpg" width="20" alt="">
+                            </div>
+                            <span class="text-[#6c7074]">@skalskip92 · 18h</span>
+                        </div>
+                        <div class="content">
+                            <span>supervision, the open-source library I created a year ago, has crossed 20,000 stars on GitHub this weekend!
+
+                                thank you to everyone who helped me build this project!
+                                
+                                it took us 3,500+ commits, 850+ PRs and 80+ contributors to do it.
+                                
+                                repository:</span>
+                            <a href="https://t.co/xXMRaS3Guk"
+                                class="text-[#1D9BF0] hover:underline">github.com/roboflow/super...</a>
+                            <div class="postimg flex justify-center my-4">
+                                <!-- <img src="https://pbs.twimg.com/medc:\Users\anushka\Downloads\twittervid.com_skalskip92_b3e0a9.mp4ia/GXujRLXakAA-9PP?format=jpg&name=small" alt=""
+                                    width="40%" class="border-l-[0.5px] 
+                                border-t-[0.5px] border-b-[0.5px] border-gray-700 rounded-l-[10px]"> -->
+                                <video src="twittervid.com_skalskip92_b3e0a9.mp4" width="90%" class="border-[0.5px] border-gray-700 rounded-[10px]" autoplay muted controls></video>
+                            </div>
+                        </div>
+                        <div class="icons flex justify-around">
+                            <div class="flex group">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-blue-500">
+                                    <g>
+                                        <path
+                                            d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span class="text-[13px] text-[#70757A] group-hover:text-blue-500">32</span>
+
+                            </div>
+                            <div class="flex group">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-[#00BA7C]">
+                                    <g>
+                                        <path
+                                            d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span class="text-[13px] text-[#70757A] group-hover:text-[#00BA7C]">343</span>
+
+                            </div>
+
+                            <div class="flex group">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-[#D7156F]">
+                                    <g>
+                                        <path
+                                            d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span class="text-[13px] text-[#70757A] group-hover:text-[#D7156F]">1.6K</span>
+
+                            </div>
+                            <div class="flex group">
+
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-blue-500">
+                                    <g>
+                                        <path
+                                            d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span class="text-[13px] text-[#70757A] group-hover:text-blue-500">64K</span>
+                            </div>
+                            <div class="flex group gap-2">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-blue-500">
+                                    <g>
+                                        <path
+                                            d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-blue-500">
+                                    <g>
+                                        <path
+                                            d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="h-[1px] w-full bg-gray-700"></div>
+                <div class="post flex my-3 justify-center items-start">
+                    <div class="image mx-4">
+                        <img src="https://pbs.twimg.com/profile_images/1741612833756835840/rt33Nc6q_bigger.png"
+                            width="50px" class="rounded-full" alt="">
+                    </div>
+                    
+
+
+
+                    <div class="account">
+                        <div class="flex">
+                            <span class="font-bold hover:underline">Progress Bar 2024</span>
+                            <svg class="inline mx-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="12" fill="#1D9BF0" />
+                                <path d="M10 14.5l4.5-4.5l1.5 1.5L10 17L7.5 14.5l1.5-1.5L10 14.5z" fill="#fff" />
+                            </svg>
+                            <!-- <div class="image">
+                                <img src="account prop.jpg" width="20" alt="">
+                            </div> -->
+                            <span class="text-[#6c7074]">@ProgressBar202_ · 6h</span>
+                        </div>
+                        <div class="content">
+                            <span>
+                                2024 is 73% complete.</span>
+                            <!-- <a href="https://science.nasa.gov/skywatching/whats-up/"
+                                class="text-[#1D9BF0] hover:underline">science.nasa.gov/skywatching/wh...</a> -->
+                            <div class="postimg flex justify-start my-4">
+                                <img src="complete.jpeg" alt=""
+                                    width="90%" class="border-[0.5px] border-gray-700 rounded-[10px]">
+                                <!-- <img src="https://pbs.twimg.com/media/GXujSIzakAEyaxg?format=jpg&name=small" alt=""
+                                    width="40%"
+                                    class="border-r-[0.5px] border-t-[0.5px] border-b-[0.5px] border-gray-700 rounded-r-[10px]"> -->
+                            </div>
+                        </div>
+                        <div class="icons flex justify-around">
+                            <div class="flex group">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-blue-500">
+                                    <g>
+                                        <path
+                                            d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span class="text-[13px] text-[#70757A] group-hover:text-blue-500">32</span>
+
+                            </div>
+                            <div class="flex group">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-[#00BA7C]">
+                                    <g>
+                                        <path
+                                            d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span class="text-[13px] text-[#70757A] group-hover:text-[#00BA7C]">343</span>
+
+                            </div>
+
+                            <div class="flex group">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-[#D7156F]">
+                                    <g>
+                                        <path
+                                            d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span class="text-[13px] text-[#70757A] group-hover:text-[#D7156F]">1.6K</span>
+
+                            </div>
+                            <div class="flex group">
+
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-blue-500">
+                                    <g>
+                                        <path
+                                            d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span class="text-[13px] text-[#70757A] group-hover:text-blue-500">64K</span>
+                            </div>
+                            <div class="flex group gap-2">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-blue-500">
+                                    <g>
+                                        <path
+                                            d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="#70757A"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi group-hover:fill-blue-500">
+                                    <g>
+                                        <path
+                                            d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="h-[1px] w-full bg-gray-700"></div>
+
+            </div>
+        </div>
+        <div class="third w-full hidden md:block sticky top-0">
+            <div>
+
+                <div class="search">
+                    <input type="text" placeholder="search" class="w-[70%] rounded-full bg-gray-900 px-4 py-2 m-3">
+                </div>
+                <div class="whats m-3 bg-[#16181c] w-[70%] py-5 rounded-xl space-y-3">
+                    <h1 class="text-xl font-bold px-5">What's happening</h1>
+                    <div class="item my-3 px-4 p-3 hover:bg-gray-800 hover:cursor-pointer">
+                        <div class="font-medium text-sm text-gray-500">Trending in India</div>
+                        <div class="font-bold">#Dhoom4</div>
+                        <div class="font-medium text-sm text-gray-500">40.2K Posts</div>
+                    </div>
+                    <div class="item my-3 px-4 p-3 hover:bg-gray-800 hover:cursor-pointer">
+                        <div class="font-medium text-sm text-gray-500">Technology · Trending</div>
+                        <div class="font-bold">iOS 18</div>
+                        <div class="font-medium text-sm text-gray-500">40.2K Posts</div>
+                    </div>
+                    <div class="item my-3 px-4 p-3 hover:bg-gray-800 hover:cursor-pointer">
+                        <div class="font-medium text-sm text-gray-500">Trending in India</div>
+                        <div class="font-bold">#RC16</div>
+                        <div class="font-medium text-sm text-gray-500">40.2K Posts</div>
+                    </div>
+                    <div class="item my-3 px-4 p-3 hover:bg-gray-800 hover:cursor-pointer">
+                        <div class="font-medium text-sm text-gray-500">Trending in India</div>
+                        <div class="font-bold">B. Smart Connect</div>
+                        <div class="font-medium text-sm text-gray-500">40.2K Posts</div>
+                    </div>
+                    <div class="my-3 px-4 p-3 text-[#1677B8] hover:cursor-pointer">Show more</div>
+                </div>
+                <div class="who m-3 bg-[#16181c] w-[70%] py-5 rounded-xl space-y-1">
+                    <h1 class="text-xl font-bold px-5">Who to follow</h1>
+                    <div class="item py-3 hover:bg-gray-800 hover:cursor-pointer flex justify-around">
+                        <div class="font-bold flex gap-3">
+                            <div><img src="download (1).jpeg" alt="" width="35px" class="rounded-full inline"></div>
+                            <div class="flex flex-col">
+                                <div>Bill Gates<svg class="inline mx-2" xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="12" fill="#3897f0" />
+                                        <path d="M10 14.5l4.5-4.5l1.5 1.5L10 17L7.5 14.5l1.5-1.5L10 14.5z" fill="#fff" />
+                                    </svg></div>
+                                <div class="font-medium text-base text-gray-500 ">@BillGates</div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="bg-white text-black rounded-full px-3 py-1 font-bold text-sm ">Follow</button>
+                        </div>
+                    </div>
+                    <div class="item py-3 hover:bg-gray-800 hover:cursor-pointer flex justify-around">
+                        <div class="font-bold flex gap-3">
+                            <div><img src="android.jpeg" alt="" width="35px" class="rounded-xl inline"></div>
+                            <div class="flex flex-col">
+                                <div>Bill Gates<svg class="inline mx-2" xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="12" fill="#E5BD25" />
+                                        <path d="M10 14.5l4.5-4.5l1.5 1.5L10 17L7.5 14.5l1.5-1.5L10 14.5z" fill="#fff" />
+                                    </svg></div>
+                                <div class="font-medium text-base text-gray-500 ">@Android</div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="bg-white text-black rounded-full px-3 py-1 font-bold text-sm ">Follow</button>
+                        </div>
+                    </div>
+                    <div class="my-3 px-4 p-3 text-[#1677B8] hover:cursor-pointer">Show more</div>
+                </div>
+                <div class="terms text-xs  m-3 w-[70%] px-3 py-5 space-y-1 text-[#71767b]">
+                    <span class="hover:underline cursor-pointer mr-2 ">Terms of Service</span>
+                    <span class="hover:underline cursor-pointer mr-2">Privacy Policy</span>
+                    <span class="hover:underline cursor-pointer mr-2">Cookie Policy</span>
+                    
+                    <span class="hover:underline cursor-pointer mr-2">Accessibility</span>
+                    <span class="hover:underline cursor-pointer mr-2">Ads info</span>
+    
+                    <span class="hover:underline cursor-pointer mr-2">More</span>
+                    <span class="hover:underline cursor-pointer mr-2">© 2024 X Corp.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
